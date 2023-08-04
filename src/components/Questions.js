@@ -15,6 +15,8 @@ export default function Questions({ onChecked }) {
     const [{ isLoading, apiData, serverError}] = useFetchQestion() 
 
     const questions = useSelector(state => state.questions.queue[state.questions.trace])
+    console.log(questions)
+
     const dispatch = useDispatch()
 
     useEffect(() => {
